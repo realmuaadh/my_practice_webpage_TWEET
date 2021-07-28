@@ -1,0 +1,67 @@
+<!DOCTYPE html> 
+<html>
+<script>
+    let counter = 1;
+    function like(){
+        if(document.querySelector('p1').innerHTML==counter + ' likes'){
+            document.querySelector('p1').innerHTML=0 + ' likes';
+        }
+        else{
+            document.querySelector('p1').innerHTML= counter + ' likes';
+        }
+        
+    }
+    
+</script>
+<head>
+    <title>My webpage</title> 
+    <style>
+         body {
+            background-image: url("/imges/Twitter-Black-Web-Background.jpg");
+         }
+        img {
+            width: 100px;
+            border-radius: 50px;
+            float: left;
+            margin-right: 10px;
+        }
+        .username{
+            font-weight: bold;
+        } 
+        .btn {
+            background-color: rgb(229, 249, 250);
+            border: none;
+            color: black;
+            padding: 16px 32px;
+            text-align: center;
+             font-size: 16px;
+             margin: 4px 2px;
+            transition: 0.3s;
+}
+        .btn:hover {
+            background-color: #0bf7ff;
+            color: rgb(0, 0, 0);
+            }
+        .content {
+            max-width: 500px;
+            margin: auto
+}
+        
+    </style>
+    
+</head>
+
+<body>
+    <div class="content">
+        <img src="imges/nba-logo.jpg" alt="NBA LOGO photo">
+        <p class= "username">@NBA</p>
+        <p>The Play-In Tournament will continue for the 2021-22 season.</p>
+        <button onclick="like()" class="btn">Like tweet</button>
+        <p1>0 likes</p1>
+      </div>
+
+    
+</body>
+
+
+</html>
